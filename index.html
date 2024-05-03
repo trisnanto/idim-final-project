@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h3></h3>
+    </div>
+
+    <div class="row justify-content-center p-2">
+      <div class="col-xl-6">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">Jumlah PAUD Negeri dan Swasta di Kota Bandung</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik1" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">Jumlah SD Negeri dan Swasta di Kota Bandung</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik5" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row justify-content-center p-2">
+      <div class="col-xl-6">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">Jumlah SMP Negeri dan Swasta di Kota Bandung</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik6" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">10 Kecamatan dengan jumlah total sekolah terbanyak</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik2" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center p-2">
+      <div class="col-xl-12">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">Jumlah penduduk, kepadatan penduduk dan luas wilayah di setiap kecamatan</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik3" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+      
+    </div>
+    <div class="row justify-content-center p-2">
+      <div class="col-xl-12">
+        <div class="card card-success">
+          <div class="card-header">
+            <h4 class="card-title">Jumlah penduduk, PAUD, SD, dan SMP di setiap kecamatan</h4>
+          </div>
+          <div class="card-body">
+            <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <canvas id="grafik4" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 488px;" width="488" height="250" class="chartjs-render-monitor"></canvas>
+          </div>
+          <!-- /.card-body -->
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
